@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 436201113}
   - component: {fileID: 436201112}
   - component: {fileID: 436201111}
+  - component: {fileID: 436201115}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -475,7 +476,8 @@ MonoBehaviour:
   blockName: New Block
   description: 
   eventHandler: {fileID: 436201111}
-  commandList: []
+  commandList:
+  - {fileID: 436201115}
   suppressAllAutoSelections: 0
 --- !u!114 &436201113
 MonoBehaviour:
@@ -503,7 +505,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 436201112}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 436201115}
   variables: []
   description: 
   stepPause: 0
@@ -529,6 +532,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &436201115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436201110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  storyText: hey
+  description: 
+  character: {fileID: 841434553}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &452624886
 GameObject:
   m_ObjectHideFlags: 0
